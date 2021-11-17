@@ -158,7 +158,7 @@ Here `conditionA` is `False` and therefore the `if` is not entered. So the compu
 
 You mean that you want to do something if `conditionA` is True, but something else if `conditionB` is True and something else if both are false ?
 
-Ok let us do this using the word `elif`. This word is a miw between `else` and `if`. It means "if the previous condition is false, try me! But I have a condition as well". Ex:
+Ok let us do this using the word `elif`. This word is a mix between `else` and `if`. It means "if the previous condition is false, try me! But I have a condition as well". Ex:
 
 ```
 1. conditionA = 10 > 11
