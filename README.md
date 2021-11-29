@@ -593,5 +593,54 @@ No! They're *immutable*. So it means that yo cannot modify an element inside the
 If you ask me when to use ``tuple`` or ``list``, I would say use ``list`` and if you cannot do something that you want to do, try ``tuple``. But ``list`` is better.
 
 
+## Slices
+
+**What is a slice?**
+
+Hey there! Yes slice is not a type. But it applies to both ``tuple`` and ``list`` so I figured out here was a good place to put it.
+
+``slice`` is used to access values in a ``list`` or ``tuple``. So if instead of getting one value from your variable, you want to get 5. How do you do ?
+
+Well you use ``slice``. A slice is a *range of indices* basically. You write it like this ``a:b`` and it means *every index starting from ``a`` and up until ``b``. But ``b`` is excluded ! Let us see and example.
+
+````
+1. greatlist = [-9.99, 1000, True, '#FreeBritney', "Z"]
+
+2. print( greatlist[2] )
+3. print( greatlist[4] )
+
+4. my_sublist = greatlist[2:4]
+5. print(my_sublist)
+############# Outputs ###############
+True
+Z
+True, '#FreeBritney'
+````
+
+Explanation:
+- So our line ``4.`` stores the slice ``2:4`` of list ``greatlist`` into the variable ``my_sublist``. Note that it did not include the last index ``4``, it only took ``2`` and ``3``.
+- Then, line ``5.`` prints the extract ``my_sublist``.
+
+Note: The ``slice`` refers to the indices. we call the extracted elements a sublist, because they are a subpart of the list. The sublist is also a variable of type `list`.
+
+**How does it work for tuples?**
+
+Exactly the same! So here is an example:
+
+````
+1. great_tuple = ('audi', 'vw', 'mercedes', 'skoda')
+
+2. print( great_tuple[1] )
+3. print( great_tuple[3] )
+
+4. my_subtuple = great_tuple[1:3]
+5. print(my_subtuple)
+############# Outputs ###############
+vw
+skoda
+('vw', 'mercedes')
+````
+
+We are now going to see a different sequential type.
 
 © Nicolas d'Argenlieu, all rights reserved.
