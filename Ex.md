@@ -57,7 +57,7 @@ Do the following:
 - Create a **function** that prints "This is big" if the input number is bigger than 10.
 - Declare a **list** of numbers from 4 to 10.
 - Store in **another variable** all even elements from the list (1 out of 2 elements).
-- Multiply the first and the last element of the second list.
+- Multiply the first and the last element of the second list using the `product function`.
 - Pass the result to the function checking if it is big.
 
 # Ex 3
@@ -102,7 +102,7 @@ Which ones are correct ?
 4.     return len(e)
 ````
 
-- [ ] `sorted(myList, reverse=1)`
+- [ ] `sorted(myList, reverse='1')`
 - [ ] `myList.sort()`
 - [ ] `myCars.sort(key=sorting_by_length)`
 - [ ] `sorted(myCars, reverse=True)`
